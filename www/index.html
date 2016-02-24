@@ -26,20 +26,37 @@
         <meta name="msapplication-tap-highlight" content="no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+
+        <!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />-->
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
         <script type="text/javascript" src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
         <title>Hello World</title>
     </head>
     <body>
-        <div class="app">
+        <div data-role="page" id="title_page" data-id="title_page" class="app">
             <h1>PhoneGap</h1>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
             </div>
+            <!--<a href="#first_page">На первую страницу</a>-->
         </div>
+
+        <!--
+        <div data-role="page" id="first_page">
+            <p>Первая страница</p>
+            <a href="#title_page">На титульную страницу</a>
+            <a href="#second_page">На вторую страницу</a>
+        </div>
+
+        <div data-role="page" id="second_page">
+            <p>Вторая страница</p>
+            <a href="#title_page">На титульную страницу</a>
+            <a href="#first_page">На первую страницу</a>
+        </div>
+        -->
+
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
